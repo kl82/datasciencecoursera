@@ -1,30 +1,38 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>jQuery UI Autocomplete - Default functionality</title>
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<style> 
+body {background: url(f323a57bb5c3f2cc4d5f2db354a5a47b.jpg) #333; 
+color: #D1ECFF; text-align: center;} 
+h1 {color:#D1ECFF; 
+font-size: 150; 
+opacity: 0.7; 
+height: 100 } 
+h2 {font-size: 50; 
+opacity: 0.7} 
+div{text-align:left;}
+</style> 
+ <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    var availableFears = [
-      "страх",
-      "фобия",
-      "Собеседование"    
-    ];
-    $( "#fears" ).autocomplete({
-      source: availableFears
-    });
-  } );
-  </script>
-</head>
-<body>
- 
-<div>
-  <input id="fears">
-</div>
- 
- 
-</body>
+<script> 
+$( function() { 
+var availableFears = [ 
+"страх", 
+"фобия", 
+"Собеседование" 
+]; 
+$( "#fears" ).autocomplete({ 
+source: availableFears 
+}); 
+} ); 
+</script> 
+</head> 
+<body> 
+<h1 style="font-family:verdana;"> Fearless </h1> 
+<h2 > Введите ситуацию </h2> 
+<form method="get | post" action="/search/"> 
+<input type="text" name="q" placeholder="Пример:Собеседование" id="fears"> 
+<input type="submit" value="Найти"> 
+</form> 
+</body> 
 </html>
